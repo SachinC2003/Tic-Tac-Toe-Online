@@ -1,0 +1,4 @@
+/* App.css */
+.box {
+  @apply bg-slate-600 h-20 flex justify-center items-center rounded-lg;
+}
