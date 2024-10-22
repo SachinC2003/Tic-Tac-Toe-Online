@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://vercel.live/link/tic-tac-toe-online-orcin.vercel.app?via=project-dashboard-alias-list&p=1",
+    origin: "*",
     methods: ["GET", "POST"]
   },
 });
