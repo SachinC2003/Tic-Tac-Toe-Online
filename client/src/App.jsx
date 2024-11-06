@@ -147,7 +147,7 @@ function App() {
     const username = result.value;
     setPlayerName(username);
 
-    const newSocket = io(process.env.REACT_APP_SERVER_URL || 'http://localhost:3000', {
+    const newSocket = io(import.meta.env.VITE_REACT_APP_SERVER_URL || 'http://localhost:3000', {
       autoConnect: true,
     });
 
